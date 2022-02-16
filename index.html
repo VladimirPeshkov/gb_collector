@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="tabs-list">
+            <li class="button tabs-list__tab" data-calc="calculator-diffDate">Разница дат</li>
+            <li class="button tabs-list__tab" data-calc="timer">Таймер</li>
+        </ul>
+        <ul class="calculators-list">
+            <li class="calculators-list__item calculator-diffDate" data-calc="calculator-diffDate">
+                <form action="" id="diffDate__form">
+                    <label class="label diffDate__label" for="firstDate">
+                        <strong>Первая дата:</strong>
+                    </label>
+                    <input class="input diffDate__input" type="date" name="" id="firstDate">
+                    <label class="label diffDate__label" for="secondDate">
+                        <strong>Вторая дата:</strong>
+                    </label>
+                    <input class="input diffDate__input" type="date" name="" id="secondDate">
+                    <button class="button diffDate__button"type="submit">Рассчитать промежуток</button>
+                </form>
+
+                <p class="diffDate__result"></p>
+            </li>
+            <li class="calculators-list__item timer active__tab" data-calc="timer">
+                <form action="" class="timer__form">
+                    <label class="label" for="input timer__input"><strong>Введите минуты:</strong></label>
+                    <input type="number" name="" id="input timer__input" class="input timer__input">
+                    <label class="label" for="input timer__input"><strong>Введите секунды:</strong></label>
+                    <input type="number" name="" id="input timer__input" class="input timer__input">
+                    <button class="button timer__button-start" type="submit">Старт</button>
+                    <button class="button timer__button-stop" type="submit" disabled>Стоп</button>
+                </form>
+                <p class="timer__result">Таймер не запущен</p>
+            </li>
+        </ul>
+    </div>
+   <script src="js/main.js" type="module"></script> 
+</body>
+</html>

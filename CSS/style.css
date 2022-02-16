@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.tabs-list {
+    display: flex;
+}
+
+
+.calculators-list {
+    padding: 40px 30px;
+    border: 1px solid rgb(142, 142, 240);
+}
+
+#diffDate__form {
+    display: flex;
+    align-items: center;
+}
+
+
+.label {
+    color: rgb(142, 142, 240);
+    margin-right: 15px;
+}
+
+.input {
+    border: none;
+    border-bottom: 2px solid rgb(142, 142, 240);
+    margin-right: 30px;
+    color: rgb(142, 142, 240);
+}
+
+.button {
+    background: #fff;
+    color: rgb(142, 142, 240);
+    border: 1px solid rgb(142, 142, 240);
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(142, 142, 240);
+    color: #fff;
+}
+
+.button:disabled {
+    cursor:none;
+    background: #ccc;
+    color: rgb(142, 142, 240);
+}
+
+.calculators-list__item {
+    height: 0;
+    overflow: hidden;
+}
+
+.active__tab {
+    height: auto;
+}
+
+.error {
+    color: rgb(253, 115, 115);
+}
+
+
+.diffDate__result {
+    margin-top: 30px;
+    color: rgb(100, 179, 100)
+}
