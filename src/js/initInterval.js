@@ -1,4 +1,4 @@
-import { addAudio } from "../sounds/addAudio.js";
+import { addAudio } from "./addAudio.js";
 
 export const initInterval = (minutes, seconds) =>{
     let userTimer = setInterval(()=>{

@@ -1,5 +1,5 @@
 import { showError } from './error.js';
-import { DateTime } from './luxon.js';
+import { DateTime } from 'luxon';
 
 export function dateCalc() {
 
