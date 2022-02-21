@@ -1,0 +1,1 @@
+export const showError = text => `<span class="error">${text}</span>`;
